@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para el amor de mi vida ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="corazones"></div>
+
+    <div class="card">
+        <h1>💖 Feliz San Valentín, para mi niña LUCIANA💖</h1>
+        <h2>Para la niña más linda del mundo 🌸</h2>
+        <p>
+            Mi amor, quiero que sepas que te amo con todo mi corazón ❤️.<br><br>
+            Eres la mujer de mi vida, mi alegría, mi motivación y mi paz.<br><br>
+            Desde que llegaste, todo es más bonito, más especial y más mágico ✨.<br><br>
+            Prometo cuidarte, apoyarte y amarte cada día más.<br><br>
+            Gracias por existir y por hacerme el hombre más feliz del mundo.
+        </p>
+
+        <div class="firma">
+            Con todo mi amor,<br>
+            CRISTIAN❤️
+        </div>
+    </div>
+
+    <script>
+        // Crear corazones flotando
+        const corazones = document.querySelector('.corazones');
+
+        for (let i = 0; i < 30; i++) {
+            let corazon = document.createElement('div');
+            corazon.classList.add('corazon');
+            corazon.style.left = Math.random() * 100 + "vw";
+            corazon.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            corazones.appendChild(corazon);
+        }
+    </script>
+
+</body>
+</html>
